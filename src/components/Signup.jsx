@@ -11,6 +11,7 @@ export default function Signup() {
   //and we can add these checkbox values to data
   data.acquisition = acquisitionValues
    console.log(data)
+   event.target.reset()
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -99,7 +100,7 @@ export default function Signup() {
       </div>
 
       <p className="form-actions">
-        <button type="reset" className="button button-flat">
+        <button type='reset' className="button button-flat">
           Reset
         </button>
         <button type="submit" className="button">

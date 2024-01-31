@@ -10,6 +10,9 @@ const password=useRef()
     const enteredEmail = email.current.value
     const enteredPassword = password.current.value
     console.log(enteredEmail, enteredPassword);
+   // email.current.value = ''
+   //less code with 
+   event.target.reset()
   }
 
   return (

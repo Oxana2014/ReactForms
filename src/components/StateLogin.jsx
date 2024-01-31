@@ -18,8 +18,9 @@ export default function Login() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(enteredValues);
+    // use enteredValues
+    setEnteredValues({ email: "", password: "" });
   }
-
 
   return (
     <form onSubmit={handleSubmit}>
@@ -43,7 +44,9 @@ export default function Login() {
             id="password"
             type="password"
             name="password"
-            onChange={(event) => handleInputChange("password", event.target.value)}
+            onChange={(event) =>
+              handleInputChange("password", event.target.value)
+            }
             value={enteredValues.password}
           />
         </div>
